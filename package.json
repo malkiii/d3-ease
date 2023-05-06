@@ -1,7 +1,7 @@
 {
   "name": "@malkiii/d3-ease",
   "version": "3.0.1",
-  "description": "a Typescript version of d3-ease",
+  "description": "a Typescript version of d3-ease.",
   "types": "dist/index.d.ts",
   "main": "dist/d3-ease.js",
   "unpkg": "dist/d3-ease.min.js",
@@ -49,10 +49,8 @@
     "node": ">=12"
   },
   "keywords": [
-    "typescript",
-    "d3",
     "d3-ease",
-    "d3-module",
+    "typescript",
     "ease",
     "easing",
     "animation",
