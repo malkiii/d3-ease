@@ -10,6 +10,9 @@
     "default": "./dist/d3-ease.js"
   },
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/"
   ],
