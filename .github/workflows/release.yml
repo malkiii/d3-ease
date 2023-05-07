@@ -1,11 +1,7 @@
 name: Release and Deploy to NPM
 
 on:
-  push:
-    tags:
-      - 'v*'
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   release:
