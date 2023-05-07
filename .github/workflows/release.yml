@@ -12,7 +12,6 @@ jobs:
       issues: write
 
     name: Release new version
-    if: ${{ startsWith(github.ref, 'refs/tags/') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
