@@ -4,8 +4,6 @@ on:
   push:
     tags:
       - 'v*'
-    branches:
-      - main
 
 jobs:
   release:
@@ -16,6 +14,7 @@ jobs:
       issues: write
 
     name: Release new version
+    if: ${{ github.event_name == 'push' && (github.event.ref == 'refs/heads/main') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
