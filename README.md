@@ -25,7 +25,7 @@ yarn add @malkiii/d3-ease
 ## Usage
 
 ```ts
-import { easeCubic, easeQuad, easeExpInOut } from './dist';
+import { easeCubic, easeQuad, easeExpInOut } from '@malkiii/d3-ease';
 
 const e1 = easeCubic(1.25);
 const e2 = easeCubic(0.83);
