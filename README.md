@@ -38,6 +38,19 @@ const e4 = easeQuad(1.47);
 const e5 = easeExpInOut(5.11);
 ```
 
+For legacy environments, you can load d3-ease’s javascript UMD bundle from an npm-based CDN such as jsDelivr; a `d3` global is exported:
+
+<!-- prettier-ignore -->
+```html
+<script src="https://cdn.jsdelivr.net/npm/d3-ease@3"></script>
+<script>
+
+  const e1 = d3.easeCubic(0.25);
+  const e2 = d3.easeExpInOut(3.75);
+
+</script>
+```
+
 ## API Reference
 
 See [API reference](https://github.com/d3/d3-ease/blob/main/README.md#api-reference) or [Try d3-ease in your browser](https://observablehq.com/@d3/easing-animations)
