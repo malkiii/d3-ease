@@ -1,4 +1,4 @@
-name: Publish to NPM 🚀
+name: Publish to NPM
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     types: [created]
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
           registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies 🔧
@@ -25,7 +25,6 @@ jobs:
         run: yarn test
 
       - name: Publish package on NPM 📦
-        run: npm install -g npm@latest
-      - uses: JS-DevTools/npm-publish@v2
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
+        run: npm i -g npm@latest && npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
