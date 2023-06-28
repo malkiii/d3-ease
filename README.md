@@ -3,7 +3,7 @@
 > This is a Typescript version from the original [d3-ease](https://www.npmjs.com/package/d3-ease).
 
 [![npm (scoped)](https://img.shields.io/npm/v/@malkiii/d3-ease?label=latest%20version&logo=npm)](https://www.npmjs.com/package/@malkiii/d3-ease)
-[![Workflow](https://github.com/malkiii/d3-ease/actions/workflows/release.yml/badge.svg)](https://github.com/malkiii/d3-ease/actions)
+[![Workflow](https://github.com/malkiii/d3-ease/actions/workflows/publish.yml/badge.svg)](https://github.com/malkiii/d3-ease/actions)
 [![License](https://img.shields.io/github/license/malkiii/d3-ease)](https://github.com/malkiii/d3-ease/blob/main/LICENSE)
 
 _Easing_ is a method of distorting time to control apparent motion in animation. It is most commonly used for [slow-in, slow-out](https://en.wikipedia.org/wiki/12_basic_principles_of_animation#Slow_In_and_Slow_Out). By easing time, [animated transitions](https://github.com/d3/d3-transition) are smoother and exhibit more plausible motion.
